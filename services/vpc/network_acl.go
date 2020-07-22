@@ -12,23 +12,23 @@ package vpc
 type NetworkAcl struct {
 
 	// 네트워크ACL번호
-NetworkAclNo *string `json:"networkAclNo,omitempty"`
+	NetworkAclNo *string `json:"networkAclNo,omitempty"`
 
 	// 네트워크ACL이름
-NetworkAclName *string `json:"networkAclName,omitempty"`
+	NetworkAclName *string `json:"networkAclName,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 
 	// 네트워크ACL상태
-NetworkAclStatus *CommonCode `json:"networkAclStatus,omitempty"`
+	NetworkAclStatus *CommonCode `json:"networkAclStatus,omitempty"`
 
 	// 네트워크ACL설명
-NetworkAclDescription *string `json:"networkAclDescription,omitempty"`
+	NetworkAclDescription *string `json:"networkAclDescription,omitempty"`
 
 	// 생성일시
-CreateDate *string `json:"createDate,omitempty"`
+	CreateDate *string `json:"createDate,omitempty"`
 
 	// Default여부
-IsDefault *string `json:"isDefault,omitempty"`
+	IsDefault *bool `json:"isDefault,omitempty"`
 }
