@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **RegionCode** | ***string** | REGION코드 | [optional] [default to null]
+**ZoneCode** | ***string** | ZONE코드 | [optional] [default to null]
 **NatGatewayInstanceNoList** | **[]\*string** | NATGateway인스턴스번호리스트 | [optional] [default to null]
 **PublicIp** | ***string** | 공인IP주소 | [optional] [default to null]
 **VpcName** | ***string** | VPC이름 | [optional] [default to null]

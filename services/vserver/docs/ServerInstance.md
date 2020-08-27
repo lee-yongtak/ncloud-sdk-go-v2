@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 **RegionCode** | ***string** | REGION코드 | [optional] [default to null]
 **VpcNo** | ***string** | VPC번호 | [optional] [default to null]
 **SubnetNo** | ***string** | 서브넷번호 | [optional] [default to null]
-**NetworkInterfaceNoList** | **[[]\*NetworkInterfaceNo](NetworkInterfaceNo.md)** | 네트워크인터페이스번호리스트 | [optional] [default to null]
+**NetworkInterfaceNoList** | **[]\*string** | 네트워크인터페이스번호리스트 | [optional] [default to null]
 **InitScriptNo** | ***string** | 초기화스크립트번호 | [optional] [default to null]
 **ServerInstanceType** | **[*CommonCode](CommonCode.md)** | 서버인스턴스유형 | [optional] [default to null]
 **BaseBlockStorageDiskType** | **[*CommonCode](CommonCode.md)** | 기본블록스토리지디스크유형 | [optional] [default to null]

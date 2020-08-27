@@ -13,7 +13,8 @@ Name | Type | Description | Notes
 **InstanceType** | **[*CommonCode](CommonCode.md)** | 인스턴스유형 | [optional] [default to null]
 **InstanceNo** | ***string** | 인스턴스번호 | [optional] [default to null]
 **Ip** | ***string** | IP주소 | [optional] [default to null]
-**AccessControlGroupNoList** | **[[]\*AccessControlGroupNo](AccessControlGroupNo.md)** | ACG번호리스트 | [optional] [default to null]
+**AccessControlGroupNoList** | **[]\*string** | ACG번호리스트 | [optional] [default to null]
+**NetworkInterfaceDescription** | ***string** | 네트워크인터페이스설명 | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **NetworkInterfaceNoList** | **[]\*string** | 네트워크인터페이스번호리스트 | [optional] [default to null]
 **Ip** | ***string** | IP주소 | [optional] [default to null]
 **NetworkInterfaceName** | ***string** | 네트워크인터페이스이름 | [optional] [default to null]
-**ServerInstanceName** | ***string** | 서버인스턴스이름 | [optional] [default to null]
+**ServerName** | ***string** | 서버이름 | [optional] [default to null]
 **SubnetName** | ***string** | 서브넷이름 | [optional] [default to null]
 **PageNo** | ***int32** | 페이지번호 | [optional] [default to null]
 **PageSize** | ***int32** | 페이지사이즈 | [optional] [default to null]

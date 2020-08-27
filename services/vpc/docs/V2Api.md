@@ -1,6 +1,6 @@
 # \V2Api
 
-All URIs are relative to *https://ncloud.apigw.ntruss.com/vpc/v2*
+All URIs are relative to *https://ncloud.beta-apigw.ntruss.com/vpc/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -40,7 +40,11 @@ Method | HTTP request | Description
 [**RemoveNetworkAclOutboundRule**](V2Api.md#RemoveNetworkAclOutboundRule) | **Post** /removeNetworkAclOutboundRule | 
 [**RemoveRoute**](V2Api.md#RemoveRoute) | **Post** /removeRoute | 
 [**RemoveRouteTableSubnet**](V2Api.md#RemoveRouteTableSubnet) | **Post** /removeRouteTableSubnet | 
+[**SetNatGatewayDescription**](V2Api.md#SetNatGatewayDescription) | **Post** /setNatGatewayDescription | 
+[**SetNetworkAclDescription**](V2Api.md#SetNetworkAclDescription) | **Post** /setNetworkAclDescription | 
+[**SetRouteTableDescription**](V2Api.md#SetRouteTableDescription) | **Post** /setRouteTableDescription | 
 [**SetSubnetNetworkAcl**](V2Api.md#SetSubnetNetworkAcl) | **Post** /setSubnetNetworkAcl | 
+[**SetVpcPeeringDescription**](V2Api.md#SetVpcPeeringDescription) | **Post** /setVpcPeeringDescription | 
 
 
 # **AcceptOrRejectVpcPeering**
@@ -1015,6 +1019,87 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **SetNatGatewayDescription**
+> SetNatGatewayDescription(setNatGatewayDescriptionRequest)
+
+
+NATGateway설명설정
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**setNatGatewayDescriptionRequest** | **[\*SetNatGatewayDescriptionRequest](SetNatGatewayDescriptionRequest.md)** | setNatGatewayDescriptionRequest | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[x-ncp-iam](../README.md#x-ncp-iam)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SetNetworkAclDescription**
+> SetNetworkAclDescription(setNetworkAclDescriptionRequest)
+
+
+네트워크ACL설명설정
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**setNetworkAclDescriptionRequest** | **[\*SetNetworkAclDescriptionRequest](SetNetworkAclDescriptionRequest.md)** | setNetworkAclDescriptionRequest | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[x-ncp-iam](../README.md#x-ncp-iam)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SetRouteTableDescription**
+> SetRouteTableDescription(setRouteTableDescriptionRequest)
+
+
+라우트테이블설명설정
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**setRouteTableDescriptionRequest** | **[\*SetRouteTableDescriptionRequest](SetRouteTableDescriptionRequest.md)** | setRouteTableDescriptionRequest | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[x-ncp-iam](../README.md#x-ncp-iam)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **SetSubnetNetworkAcl**
 > SetSubnetNetworkAclResponse SetSubnetNetworkAcl(setSubnetNetworkAclRequest)
 
@@ -1030,6 +1115,33 @@ Name | Type | Description  | Notes
 ### Return type
 
 *[**SetSubnetNetworkAclResponse**](SetSubnetNetworkAclResponse.md)
+
+### Authorization
+
+[x-ncp-iam](../README.md#x-ncp-iam)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SetVpcPeeringDescription**
+> SetVpcPeeringDescription(setVpcPeeringDescriptionRequest)
+
+
+VPCPeering설명설정
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**setVpcPeeringDescriptionRequest** | **[\*SetVpcPeeringDescriptionRequest](SetVpcPeeringDescriptionRequest.md)** | setVpcPeeringDescriptionRequest | 
+
+### Return type
+
+ (empty response body)
 
 ### Authorization
 

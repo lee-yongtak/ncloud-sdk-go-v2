@@ -14,7 +14,6 @@ Name | Type | Description | Notes
 **ServerCreateCount** | ***int32** | 서버생성개수 | [optional] [default to null]
 **ServerCreateStartNo** | ***int32** | 서버생성시작번호 | [optional] [default to null]
 **FeeSystemTypeCode** | ***string** | 요금제유형코드 | [optional] [default to null]
-**ZoneCode** | ***string** | ZONE코드 | [optional] [default to null]
 **InitScriptNo** | ***string** | 초기화스크립트번호 | [optional] [default to null]
 **VpcNo** | ***string** | VPC번호 | [default to null]
 **SubnetNo** | ***string** | 서브넷번호 | [default to null]
