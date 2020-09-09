@@ -1128,7 +1128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **SetVpcPeeringDescription**
-> SetVpcPeeringDescription(setVpcPeeringDescriptionRequest)
+> SetVpcPeeringDescriptionResponse SetVpcPeeringDescription(setVpcPeeringDescriptionRequest)
 
 
 VPCPeering설명설정
@@ -1141,7 +1141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+*[**SetVpcPeeringDescriptionResponse**](SetVpcPeeringDescriptionResponse.md)
 
 ### Authorization
 
