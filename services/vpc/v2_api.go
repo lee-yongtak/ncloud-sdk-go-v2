@@ -29,7 +29,7 @@ var (
 type V2ApiService service
 
 
-/* V2ApiService 
+/* V2ApiService
  VPCPeering요청수락거절
  @param acceptOrRejectVpcPeeringRequest acceptOrRejectVpcPeeringRequest
  @return *AcceptOrRejectVpcPeeringResponse*/
@@ -103,7 +103,7 @@ func (a *V2ApiService) AcceptOrRejectVpcPeering(acceptOrRejectVpcPeeringRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACLInboundRule추가
  @param addNetworkAclInboundRuleRequest addNetworkAclInboundRuleRequest
  @return *AddNetworkAclInboundRuleResponse*/
@@ -177,7 +177,7 @@ func (a *V2ApiService) AddNetworkAclInboundRule(addNetworkAclInboundRuleRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACLOutboundRule추가
  @param addNetworkAclOutboundRuleRequest addNetworkAclOutboundRuleRequest
  @return *AddNetworkAclOutboundRuleResponse*/
@@ -251,7 +251,7 @@ func (a *V2ApiService) AddNetworkAclOutboundRule(addNetworkAclOutboundRuleReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트추가
  @param addRouteRequest addRouteRequest
  @return *AddRouteResponse*/
@@ -325,7 +325,7 @@ func (a *V2ApiService) AddRoute(addRouteRequest *AddRouteRequest) (*AddRouteResp
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트테이블의연관서브넷추가
  @param addRouteTableSubnetRequest addRouteTableSubnetRequest
  @return *AddRouteTableSubnetResponse*/
@@ -399,7 +399,7 @@ func (a *V2ApiService) AddRouteTableSubnet(addRouteTableSubnetRequest *AddRouteT
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NATGateway인스턴스생성
  @param createNatGatewayInstanceRequest createNatGatewayInstanceRequest
  @return *CreateNatGatewayInstanceResponse*/
@@ -473,7 +473,7 @@ func (a *V2ApiService) CreateNatGatewayInstance(createNatGatewayInstanceRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACL생성
  @param createNetworkAclRequest createNetworkAclRequest
  @return *CreateNetworkAclResponse*/
@@ -547,7 +547,7 @@ func (a *V2ApiService) CreateNetworkAcl(createNetworkAclRequest *CreateNetworkAc
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트테이블생성
  @param createRouteTableRequest createRouteTableRequest
  @return *CreateRouteTableResponse*/
@@ -621,7 +621,7 @@ func (a *V2ApiService) CreateRouteTable(createRouteTableRequest *CreateRouteTabl
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서브넷생성
  @param createSubnetRequest createSubnetRequest
  @return *CreateSubnetResponse*/
@@ -695,7 +695,7 @@ func (a *V2ApiService) CreateSubnet(createSubnetRequest *CreateSubnetRequest) (*
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPC생성
  @param createVpcRequest createVpcRequest
  @return *CreateVpcResponse*/
@@ -769,7 +769,7 @@ func (a *V2ApiService) CreateVpc(createVpcRequest *CreateVpcRequest) (*CreateVpc
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPCPeering인스턴스생성
  @param createVpcPeeringInstanceRequest createVpcPeeringInstanceRequest
  @return *CreateVpcPeeringInstanceResponse*/
@@ -843,7 +843,7 @@ func (a *V2ApiService) CreateVpcPeeringInstance(createVpcPeeringInstanceRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NATGateway인스턴스삭제
  @param deleteNatGatewayInstanceRequest deleteNatGatewayInstanceRequest
  @return *DeleteNatGatewayInstanceResponse*/
@@ -917,7 +917,7 @@ func (a *V2ApiService) DeleteNatGatewayInstance(deleteNatGatewayInstanceRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACL삭제
  @param deleteNetworkAclRequest deleteNetworkAclRequest
  @return *DeleteNetworkAclResponse*/
@@ -991,7 +991,7 @@ func (a *V2ApiService) DeleteNetworkAcl(deleteNetworkAclRequest *DeleteNetworkAc
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트테이블삭제
  @param deleteRouteTableRequest deleteRouteTableRequest
  @return *DeleteRouteTableResponse*/
@@ -1065,7 +1065,7 @@ func (a *V2ApiService) DeleteRouteTable(deleteRouteTableRequest *DeleteRouteTabl
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서브넷삭제
  @param deleteSubnetRequest deleteSubnetRequest
  @return *DeleteSubnetResponse*/
@@ -1139,7 +1139,7 @@ func (a *V2ApiService) DeleteSubnet(deleteSubnetRequest *DeleteSubnetRequest) (*
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPC삭제
  @param deleteVpcRequest deleteVpcRequest
  @return *DeleteVpcResponse*/
@@ -1213,7 +1213,7 @@ func (a *V2ApiService) DeleteVpc(deleteVpcRequest *DeleteVpcRequest) (*DeleteVpc
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPCPeering인스턴스삭제
  @param deleteVpcPeeringInstanceRequest deleteVpcPeeringInstanceRequest
  @return *DeleteVpcPeeringInstanceResponse*/
@@ -1287,7 +1287,7 @@ func (a *V2ApiService) DeleteVpcPeeringInstance(deleteVpcPeeringInstanceRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NATGateway인스턴스상세조회
  @param getNatGatewayInstanceDetailRequest getNatGatewayInstanceDetailRequest
  @return *GetNatGatewayInstanceDetailResponse*/
@@ -1361,7 +1361,7 @@ func (a *V2ApiService) GetNatGatewayInstanceDetail(getNatGatewayInstanceDetailRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NATGateway인스턴스리스트조회
  @param getNatGatewayInstanceListRequest getNatGatewayInstanceListRequest
  @return *GetNatGatewayInstanceListResponse*/
@@ -1435,7 +1435,7 @@ func (a *V2ApiService) GetNatGatewayInstanceList(getNatGatewayInstanceListReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACL상세조회
  @param getNetworkAclDetailRequest getNetworkAclDetailRequest
  @return *GetNetworkAclDetailResponse*/
@@ -1509,7 +1509,7 @@ func (a *V2ApiService) GetNetworkAclDetail(getNetworkAclDetailRequest *GetNetwor
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACL리스트조회
  @param getNetworkAclListRequest getNetworkAclListRequest
  @return *GetNetworkAclListResponse*/
@@ -1583,7 +1583,7 @@ func (a *V2ApiService) GetNetworkAclList(getNetworkAclListRequest *GetNetworkAcl
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACLRule리스트조회
  @param getNetworkAclRuleListRequest getNetworkAclRuleListRequest
  @return *GetNetworkAclRuleListResponse*/
@@ -1657,7 +1657,7 @@ func (a *V2ApiService) GetNetworkAclRuleList(getNetworkAclRuleListRequest *GetNe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트리스트조회
  @param getRouteListRequest getRouteListRequest
  @return *GetRouteListResponse*/
@@ -1731,7 +1731,7 @@ func (a *V2ApiService) GetRouteList(getRouteListRequest *GetRouteListRequest) (*
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트테이블상세조회
  @param getRouteTableDetailRequest getRouteTableDetailRequest
  @return *GetRouteTableDetailResponse*/
@@ -1805,7 +1805,7 @@ func (a *V2ApiService) GetRouteTableDetail(getRouteTableDetailRequest *GetRouteT
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트테이블리스트조회
  @param getRouteTableListRequest getRouteTableListRequest
  @return *GetRouteTableListResponse*/
@@ -1879,7 +1879,7 @@ func (a *V2ApiService) GetRouteTableList(getRouteTableListRequest *GetRouteTable
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트테이블에연관된서브넷리스트조회
  @param getRouteTableSubnetListRequest getRouteTableSubnetListRequest
  @return *GetRouteTableSubnetListResponse*/
@@ -1953,7 +1953,7 @@ func (a *V2ApiService) GetRouteTableSubnetList(getRouteTableSubnetListRequest *G
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서브넷상세조회
  @param getSubnetDetailRequest getSubnetDetailRequest
  @return *GetSubnetDetailResponse*/
@@ -2027,7 +2027,7 @@ func (a *V2ApiService) GetSubnetDetail(getSubnetDetailRequest *GetSubnetDetailRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서브넷리스트조회
  @param getSubnetListRequest getSubnetListRequest
  @return *GetSubnetListResponse*/
@@ -2101,7 +2101,7 @@ func (a *V2ApiService) GetSubnetList(getSubnetListRequest *GetSubnetListRequest)
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPC상세조회
  @param getVpcDetailRequest getVpcDetailRequest
  @return *GetVpcDetailResponse*/
@@ -2175,7 +2175,7 @@ func (a *V2ApiService) GetVpcDetail(getVpcDetailRequest *GetVpcDetailRequest) (*
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPC리스트조회
  @param getVpcListRequest getVpcListRequest
  @return *GetVpcListResponse*/
@@ -2249,7 +2249,7 @@ func (a *V2ApiService) GetVpcList(getVpcListRequest *GetVpcListRequest) (*GetVpc
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPCPeering인스턴스상세조회
  @param getVpcPeeringInstanceDetailRequest getVpcPeeringInstanceDetailRequest
  @return *GetVpcPeeringInstanceDetailResponse*/
@@ -2323,7 +2323,7 @@ func (a *V2ApiService) GetVpcPeeringInstanceDetail(getVpcPeeringInstanceDetailRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPCPeering인스턴스리스트조회
  @param getVpcPeeringInstanceListRequest getVpcPeeringInstanceListRequest
  @return *GetVpcPeeringInstanceListResponse*/
@@ -2397,7 +2397,7 @@ func (a *V2ApiService) GetVpcPeeringInstanceList(getVpcPeeringInstanceListReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACLInboundRule제거
  @param removeNetworkAclInboundRuleRequest removeNetworkAclInboundRuleRequest
  @return *RemoveNetworkAclInboundRuleResponse*/
@@ -2471,7 +2471,7 @@ func (a *V2ApiService) RemoveNetworkAclInboundRule(removeNetworkAclInboundRuleRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACLOutboundRule제거
  @param removeNetworkAclOutboundRuleRequest removeNetworkAclOutboundRuleRequest
  @return *RemoveNetworkAclOutboundRuleResponse*/
@@ -2545,7 +2545,7 @@ func (a *V2ApiService) RemoveNetworkAclOutboundRule(removeNetworkAclOutboundRule
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트제거
  @param removeRouteRequest removeRouteRequest
  @return *RemoveRouteResponse*/
@@ -2619,7 +2619,7 @@ func (a *V2ApiService) RemoveRoute(removeRouteRequest *RemoveRouteRequest) (*Rem
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트테이블의연관서브넷제거
  @param removeRouteTableSubnetRequest removeRouteTableSubnetRequest
  @return *RemoveRouteTableSubnetResponse*/
@@ -2693,7 +2693,7 @@ func (a *V2ApiService) RemoveRouteTableSubnet(removeRouteTableSubnetRequest *Rem
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NATGateway설명설정
  @param setNatGatewayDescriptionRequest setNatGatewayDescriptionRequest
  @return *SetNatGatewayDescriptionResponse*/
@@ -2767,7 +2767,7 @@ func (a *V2ApiService) SetNatGatewayDescription(setNatGatewayDescriptionRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  네트워크ACL설명설정
  @param setNetworkAclDescriptionRequest setNetworkAclDescriptionRequest
  @return *SetNetworkAclDescriptionResponse*/
@@ -2841,7 +2841,7 @@ func (a *V2ApiService) SetNetworkAclDescription(setNetworkAclDescriptionRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  라우트테이블설명설정
  @param setRouteTableDescriptionRequest setRouteTableDescriptionRequest
  @return *SetRouteTableDescriptionResponse*/
@@ -2915,7 +2915,7 @@ func (a *V2ApiService) SetRouteTableDescription(setRouteTableDescriptionRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서브넷의네트워크ACL설정
  @param setSubnetNetworkAclRequest setSubnetNetworkAclRequest
  @return *SetSubnetNetworkAclResponse*/
@@ -2989,16 +2989,17 @@ func (a *V2ApiService) SetSubnetNetworkAcl(setSubnetNetworkAclRequest *SetSubnet
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  VPCPeering설명설정
  @param setVpcPeeringDescriptionRequest setVpcPeeringDescriptionRequest
  @return */
-func (a *V2ApiService) SetVpcPeeringDescription(setVpcPeeringDescriptionRequest *SetVpcPeeringDescriptionRequest) (error) {
+func (a *V2ApiService) SetVpcPeeringDescription(setVpcPeeringDescriptionRequest *SetVpcPeeringDescriptionRequest) (*SetVpcPeeringDescriptionResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
 		localVarPostBody interface{}
 		localVarFileName string
 		localVarFileBytes []byte
+		successPayload  SetVpcPeeringDescriptionResponse
 	)
 
 	// create path and map variables
@@ -3038,26 +3039,26 @@ func (a *V2ApiService) SetVpcPeeringDescription(setVpcPeeringDescriptionRequest 
 	}
 	r, err := a.client.prepareRequest(localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
 	if err != nil {
-		return err
+		return &successPayload, err
 	}
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return err
+		return &successPayload, err
 	}
 	defer localVarHttpResponse.Body.Close()
 	bodyBytes, _ := ioutil.ReadAll(localVarHttpResponse.Body)
 
 	if localVarHttpResponse.StatusCode >= 300 || (localVarHttpResponse.StatusCode < 300 && !strings.HasPrefix(string(bodyBytes), `{`)) {
-		return reportError("Status: %v, Body: %s", localVarHttpResponse.Status, bodyBytes)
+		return &successPayload, reportError("Status: %v, Body: %s", localVarHttpResponse.Status, bodyBytes)
 	}
 
 	if !strings.Contains(string(bodyBytes), `{"error"`) && strings.HasPrefix(string(bodyBytes), `{`) {
 		if err = json.Unmarshal(bodyBytes[bytes.IndexAny(bytes.Trim(bodyBytes, "{"), "{"):len(bodyBytes)-1], &successPayload); err != nil {
-			return err
+			return &successPayload, err
 		}
 	}
 
-	return err
+	return &successPayload, err
 }
 
