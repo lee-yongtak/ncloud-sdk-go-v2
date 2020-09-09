@@ -1020,7 +1020,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **SetNatGatewayDescription**
-> SetNatGatewayDescription(setNatGatewayDescriptionRequest)
+> SetNatGatewayDescriptionResponse SetNatGatewayDescription(setNatGatewayDescriptionRequest)
 
 
 NATGateway설명설정
@@ -1033,7 +1033,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+*[**SetNatGatewayDescriptionResponse**](SetNatGatewayDescriptionResponse.md)
 
 ### Authorization
 
@@ -1047,7 +1047,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **SetNetworkAclDescription**
-> SetNetworkAclDescription(setNetworkAclDescriptionRequest)
+> SetNetworkAclDescriptionResponse SetNetworkAclDescription(setNetworkAclDescriptionRequest)
 
 
 네트워크ACL설명설정
@@ -1060,7 +1060,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+*[**SetNetworkAclDescriptionResponse**](SetNetworkAclDescriptionResponse.md)
 
 ### Authorization
 
@@ -1074,7 +1074,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **SetRouteTableDescription**
-> SetRouteTableDescription(setRouteTableDescriptionRequest)
+> SetRouteTableDescriptionResponse SetRouteTableDescription(setRouteTableDescriptionRequest)
 
 
 라우트테이블설명설정
@@ -1087,7 +1087,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+*[**SetRouteTableDescriptionResponse**](SetRouteTableDescriptionResponse.md)
 
 ### Authorization
 
