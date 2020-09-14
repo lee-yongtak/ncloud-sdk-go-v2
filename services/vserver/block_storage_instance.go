@@ -56,7 +56,7 @@ BlockStorageDiskDetailType *CommonCode `json:"blockStorageDiskDetailType,omitemp
 MaxIopsThroughput *int32 `json:"maxIopsThroughput,omitempty"`
 
 	// 볼륨암호화여부
-IsEncryptedVolume *string `json:"isEncryptedVolume,omitempty"`
+IsEncryptedVolume *bool `json:"isEncryptedVolume,omitempty"`
 
 	// ZONE코드
 ZoneCode *string `json:"zoneCode,omitempty"`
