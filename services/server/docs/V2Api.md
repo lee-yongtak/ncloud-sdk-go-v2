@@ -4,67 +4,67 @@ All URIs are relative to *https://ncloud.apigw.ntruss.com/server/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddNasVolumeAccessControl**](V2Api.md#AddNasVolumeAccessControl) | **Post** /addNasVolumeAccessControl | 
-[**AddPortForwardingRules**](V2Api.md#AddPortForwardingRules) | **Post** /addPortForwardingRules | 
-[**AssociatePublicIpWithServerInstance**](V2Api.md#AssociatePublicIpWithServerInstance) | **Post** /associatePublicIpWithServerInstance | 
-[**AttachBlockStorageInstance**](V2Api.md#AttachBlockStorageInstance) | **Post** /attachBlockStorageInstance | 
-[**AttachNetworkInterface**](V2Api.md#AttachNetworkInterface) | **Post** /attachNetworkInterface | 
-[**ChangeNasVolumeSize**](V2Api.md#ChangeNasVolumeSize) | **Post** /changeNasVolumeSize | 
-[**ChangeServerInstanceSpec**](V2Api.md#ChangeServerInstanceSpec) | **Post** /changeServerInstanceSpec | 
-[**CreateBlockStorageInstance**](V2Api.md#CreateBlockStorageInstance) | **Post** /createBlockStorageInstance | 
-[**CreateBlockStorageSnapshotInstance**](V2Api.md#CreateBlockStorageSnapshotInstance) | **Post** /createBlockStorageSnapshotInstance | 
-[**CreateInstanceTags**](V2Api.md#CreateInstanceTags) | **Post** /createInstanceTags | 
-[**CreateLoginKey**](V2Api.md#CreateLoginKey) | **Post** /createLoginKey | 
-[**CreateMemberServerImage**](V2Api.md#CreateMemberServerImage) | **Post** /createMemberServerImage | 
-[**CreateNasVolumeInstance**](V2Api.md#CreateNasVolumeInstance) | **Post** /createNasVolumeInstance | 
-[**CreateNetworkInterface**](V2Api.md#CreateNetworkInterface) | **Post** /createNetworkInterface | 
-[**CreatePublicIpInstance**](V2Api.md#CreatePublicIpInstance) | **Post** /createPublicIpInstance | 
-[**CreateServerInstances**](V2Api.md#CreateServerInstances) | **Post** /createServerInstances | 
-[**DeleteBlockStorageInstances**](V2Api.md#DeleteBlockStorageInstances) | **Post** /deleteBlockStorageInstances | 
-[**DeleteBlockStorageSnapshotInstances**](V2Api.md#DeleteBlockStorageSnapshotInstances) | **Post** /deleteBlockStorageSnapshotInstances | 
-[**DeleteInstanceTags**](V2Api.md#DeleteInstanceTags) | **Post** /deleteInstanceTags | 
-[**DeleteLoginKey**](V2Api.md#DeleteLoginKey) | **Post** /deleteLoginKey | 
-[**DeleteMemberServerImages**](V2Api.md#DeleteMemberServerImages) | **Post** /deleteMemberServerImages | 
-[**DeleteNasVolumeInstance**](V2Api.md#DeleteNasVolumeInstance) | **Post** /deleteNasVolumeInstance | 
-[**DeleteNetworkInterface**](V2Api.md#DeleteNetworkInterface) | **Post** /deleteNetworkInterface | 
-[**DeletePortForwardingRules**](V2Api.md#DeletePortForwardingRules) | **Post** /deletePortForwardingRules | 
-[**DeletePublicIpInstances**](V2Api.md#DeletePublicIpInstances) | **Post** /deletePublicIpInstances | 
-[**DetachBlockStorageInstances**](V2Api.md#DetachBlockStorageInstances) | **Post** /detachBlockStorageInstances | 
-[**DetachNetworkInterface**](V2Api.md#DetachNetworkInterface) | **Post** /detachNetworkInterface | 
-[**DisassociatePublicIpFromServerInstance**](V2Api.md#DisassociatePublicIpFromServerInstance) | **Post** /disassociatePublicIpFromServerInstance | 
-[**GetAccessControlGroupList**](V2Api.md#GetAccessControlGroupList) | **Post** /getAccessControlGroupList | 
-[**GetAccessControlGroupServerInstanceList**](V2Api.md#GetAccessControlGroupServerInstanceList) | **Post** /getAccessControlGroupServerInstanceList | 
-[**GetAccessControlRuleList**](V2Api.md#GetAccessControlRuleList) | **Post** /getAccessControlRuleList | 
-[**GetBlockStorageInstanceList**](V2Api.md#GetBlockStorageInstanceList) | **Post** /getBlockStorageInstanceList | 
-[**GetBlockStorageSnapshotInstanceList**](V2Api.md#GetBlockStorageSnapshotInstanceList) | **Post** /getBlockStorageSnapshotInstanceList | 
-[**GetInitScriptList**](V2Api.md#GetInitScriptList) | **Post** /getInitScriptList | 
-[**GetInstanceTagList**](V2Api.md#GetInstanceTagList) | **Post** /getInstanceTagList | 
-[**GetLoginKeyList**](V2Api.md#GetLoginKeyList) | **Post** /getLoginKeyList | 
-[**GetMemberServerImageList**](V2Api.md#GetMemberServerImageList) | **Post** /getMemberServerImageList | 
-[**GetNasVolumeInstanceList**](V2Api.md#GetNasVolumeInstanceList) | **Post** /getNasVolumeInstanceList | 
-[**GetNasVolumeInstanceRatingList**](V2Api.md#GetNasVolumeInstanceRatingList) | **Post** /getNasVolumeInstanceRatingList | 
-[**GetNetworkInterfaceList**](V2Api.md#GetNetworkInterfaceList) | **Post** /getNetworkInterfaceList | 
-[**GetPortForwardingRuleList**](V2Api.md#GetPortForwardingRuleList) | **Post** /getPortForwardingRuleList | 
-[**GetPrivateSubnetInstanceList**](V2Api.md#GetPrivateSubnetInstanceList) | **Post** /getPrivateSubnetInstanceList | 
-[**GetPublicIpInstanceList**](V2Api.md#GetPublicIpInstanceList) | **Post** /getPublicIpInstanceList | 
-[**GetPublicIpTargetServerInstanceList**](V2Api.md#GetPublicIpTargetServerInstanceList) | **Post** /getPublicIpTargetServerInstanceList | 
-[**GetRaidList**](V2Api.md#GetRaidList) | **Post** /getRaidList | 
-[**GetRegionList**](V2Api.md#GetRegionList) | **Post** /getRegionList | 
-[**GetRootPassword**](V2Api.md#GetRootPassword) | **Post** /getRootPassword | 
-[**GetRootPasswordServerInstanceList**](V2Api.md#GetRootPasswordServerInstanceList) | **Post** /getRootPasswordServerInstanceList | 
-[**GetServerImageProductList**](V2Api.md#GetServerImageProductList) | **Post** /getServerImageProductList | 
-[**GetServerInstanceList**](V2Api.md#GetServerInstanceList) | **Post** /getServerInstanceList | 
-[**GetServerProductList**](V2Api.md#GetServerProductList) | **Post** /getServerProductList | 
-[**GetZoneList**](V2Api.md#GetZoneList) | **Post** /getZoneList | 
-[**ImportLoginKey**](V2Api.md#ImportLoginKey) | **Post** /importLoginKey | 
-[**RebootServerInstances**](V2Api.md#RebootServerInstances) | **Post** /rebootServerInstances | 
-[**RecreateServerInstance**](V2Api.md#RecreateServerInstance) | **Post** /recreateServerInstance | 
-[**RemoveNasVolumeAccessControl**](V2Api.md#RemoveNasVolumeAccessControl) | **Post** /removeNasVolumeAccessControl | 
-[**ReplaceServerInstanceAssociatedWithPublicIp**](V2Api.md#ReplaceServerInstanceAssociatedWithPublicIp) | **Post** /replaceServerInstanceAssociatedWithPublicIp | 
-[**SetNasVolumeAccessControl**](V2Api.md#SetNasVolumeAccessControl) | **Post** /setNasVolumeAccessControl | 
-[**StartServerInstances**](V2Api.md#StartServerInstances) | **Post** /startServerInstances | 
-[**StopServerInstances**](V2Api.md#StopServerInstances) | **Post** /stopServerInstances | 
-[**TerminateServerInstances**](V2Api.md#TerminateServerInstances) | **Post** /terminateServerInstances | 
+[**AddNasVolumeAccessControl**](V2Api.md#AddNasVolumeAccessControl) | **Post** /addNasVolumeAccessControl |
+[**AddPortForwardingRules**](V2Api.md#AddPortForwardingRules) | **Post** /addPortForwardingRules |
+[**AssociatePublicIpWithServerInstance**](V2Api.md#AssociatePublicIpWithServerInstance) | **Post** /associatePublicIpWithServerInstance |
+[**AttachBlockStorageInstance**](V2Api.md#AttachBlockStorageInstance) | **Post** /attachBlockStorageInstance |
+[**AttachNetworkInterface**](V2Api.md#AttachNetworkInterface) | **Post** /attachNetworkInterface |
+[**ChangeNasVolumeSize**](V2Api.md#ChangeNasVolumeSize) | **Post** /changeNasVolumeSize |
+[**ChangeServerInstanceSpec**](V2Api.md#ChangeServerInstanceSpec) | **Post** /changeServerInstanceSpec |
+[**CreateBlockStorageInstance**](V2Api.md#CreateBlockStorageInstance) | **Post** /createBlockStorageInstance |
+[**CreateBlockStorageSnapshotInstance**](V2Api.md#CreateBlockStorageSnapshotInstance) | **Post** /createBlockStorageSnapshotInstance |
+[**CreateInstanceTags**](V2Api.md#CreateInstanceTags) | **Post** /createInstanceTags |
+[**CreateLoginKey**](V2Api.md#CreateLoginKey) | **Post** /createLoginKey |
+[**CreateMemberServerImage**](V2Api.md#CreateMemberServerImage) | **Post** /createMemberServerImage |
+[**CreateNasVolumeInstance**](V2Api.md#CreateNasVolumeInstance) | **Post** /createNasVolumeInstance |
+[**CreateNetworkInterface**](V2Api.md#CreateNetworkInterface) | **Post** /createNetworkInterface |
+[**CreatePublicIpInstance**](V2Api.md#CreatePublicIpInstance) | **Post** /createPublicIpInstance |
+[**CreateServerInstances**](V2Api.md#CreateServerInstances) | **Post** /createServerInstances |
+[**DeleteBlockStorageInstances**](V2Api.md#DeleteBlockStorageInstances) | **Post** /deleteBlockStorageInstances |
+[**DeleteBlockStorageSnapshotInstances**](V2Api.md#DeleteBlockStorageSnapshotInstances) | **Post** /deleteBlockStorageSnapshotInstances |
+[**DeleteInstanceTags**](V2Api.md#DeleteInstanceTags) | **Post** /deleteInstanceTags |
+[**DeleteLoginKey**](V2Api.md#DeleteLoginKey) | **Post** /deleteLoginKey |
+[**DeleteMemberServerImages**](V2Api.md#DeleteMemberServerImages) | **Post** /deleteMemberServerImages |
+[**DeleteNasVolumeInstance**](V2Api.md#DeleteNasVolumeInstance) | **Post** /deleteNasVolumeInstance |
+[**DeleteNetworkInterface**](V2Api.md#DeleteNetworkInterface) | **Post** /deleteNetworkInterface |
+[**DeletePortForwardingRules**](V2Api.md#DeletePortForwardingRules) | **Post** /deletePortForwardingRules |
+[**DeletePublicIpInstances**](V2Api.md#DeletePublicIpInstances) | **Post** /deletePublicIpInstances |
+[**DetachBlockStorageInstances**](V2Api.md#DetachBlockStorageInstances) | **Post** /detachBlockStorageInstances |
+[**DetachNetworkInterface**](V2Api.md#DetachNetworkInterface) | **Post** /detachNetworkInterface |
+[**DisassociatePublicIpFromServerInstance**](V2Api.md#DisassociatePublicIpFromServerInstance) | **Post** /disassociatePublicIpFromServerInstance |
+[**GetAccessControlGroupList**](V2Api.md#GetAccessControlGroupList) | **Post** /getAccessControlGroupList |
+[**GetAccessControlGroupServerInstanceList**](V2Api.md#GetAccessControlGroupServerInstanceList) | **Post** /getAccessControlGroupServerInstanceList |
+[**GetAccessControlRuleList**](V2Api.md#GetAccessControlRuleList) | **Post** /getAccessControlRuleList |
+[**GetBlockStorageInstanceList**](V2Api.md#GetBlockStorageInstanceList) | **Post** /getBlockStorageInstanceList |
+[**GetBlockStorageSnapshotInstanceList**](V2Api.md#GetBlockStorageSnapshotInstanceList) | **Post** /getBlockStorageSnapshotInstanceList |
+[**GetInitScriptList**](V2Api.md#GetInitScriptList) | **Post** /getInitScriptList |
+[**GetInstanceTagList**](V2Api.md#GetInstanceTagList) | **Post** /getInstanceTagList |
+[**GetLoginKeyList**](V2Api.md#GetLoginKeyList) | **Post** /getLoginKeyList |
+[**GetMemberServerImageList**](V2Api.md#GetMemberServerImageList) | **Post** /getMemberServerImageList |
+[**GetNasVolumeInstanceList**](V2Api.md#GetNasVolumeInstanceList) | **Post** /getNasVolumeInstanceList |
+[**GetNasVolumeInstanceRatingList**](V2Api.md#GetNasVolumeInstanceRatingList) | **Post** /getNasVolumeInstanceRatingList |
+[**GetNetworkInterfaceList**](V2Api.md#GetNetworkInterfaceList) | **Post** /getNetworkInterfaceList |
+[**GetPortForwardingRuleList**](V2Api.md#GetPortForwardingRuleList) | **Post** /getPortForwardingRuleList |
+[**GetPrivateSubnetInstanceList**](V2Api.md#GetPrivateSubnetInstanceList) | **Post** /getPrivateSubnetInstanceList |
+[**GetPublicIpInstanceList**](V2Api.md#GetPublicIpInstanceList) | **Post** /getPublicIpInstanceList |
+[**GetPublicIpTargetServerInstanceList**](V2Api.md#GetPublicIpTargetServerInstanceList) | **Post** /getPublicIpTargetServerInstanceList |
+[**GetRaidList**](V2Api.md#GetRaidList) | **Post** /getRaidList |
+[**GetRegionList**](V2Api.md#GetRegionList) | **Post** /getRegionList |
+[**GetRootPassword**](V2Api.md#GetRootPassword) | **Post** /getRootPassword |
+[**GetRootPasswordServerInstanceList**](V2Api.md#GetRootPasswordServerInstanceList) | **Post** /getRootPasswordServerInstanceList |
+[**GetServerImageProductList**](V2Api.md#GetServerImageProductList) | **Post** /getServerImageProductList |
+[**GetServerInstanceList**](V2Api.md#GetServerInstanceList) | **Post** /getServerInstanceList |
+[**GetServerProductList**](V2Api.md#GetServerProductList) | **Post** /getServerProductList |
+[**GetZoneList**](V2Api.md#GetZoneList) | **Post** /getZoneList |
+[**ImportLoginKey**](V2Api.md#ImportLoginKey) | **Post** /importLoginKey |
+[**RebootServerInstances**](V2Api.md#RebootServerInstances) | **Post** /rebootServerInstances |
+[**RecreateServerInstance**](V2Api.md#RecreateServerInstance) | **Post** /recreateServerInstance |
+[**RemoveNasVolumeAccessControl**](V2Api.md#RemoveNasVolumeAccessControl) | **Post** /removeNasVolumeAccessControl |
+[**ReplaceServerInstanceAssociatedWithPublicIp**](V2Api.md#ReplaceServerInstanceAssociatedWithPublicIp) | **Post** /replaceServerInstanceAssociatedWithPublicIp |
+[**SetNasVolumeAccessControl**](V2Api.md#SetNasVolumeAccessControl) | **Post** /setNasVolumeAccessControl |
+[**StartServerInstances**](V2Api.md#StartServerInstances) | **Post** /startServerInstances |
+[**StopServerInstances**](V2Api.md#StopServerInstances) | **Post** /stopServerInstances |
+[**TerminateServerInstances**](V2Api.md#TerminateServerInstances) | **Post** /terminateServerInstances |
 
 
 # **AddNasVolumeAccessControl**
@@ -77,7 +77,7 @@ NAS볼륨인스턴스접근제어추가
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**addNasVolumeAccessControlRequest** | **[\*AddNasVolumeAccessControlRequest](AddNasVolumeAccessControlRequest.md)** | addNasVolumeAccessControlRequest | 
+**addNasVolumeAccessControlRequest** | **[\*AddNasVolumeAccessControlRequest](AddNasVolumeAccessControlRequest.md)** | addNasVolumeAccessControlRequest |
 
 ### Return type
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**addPortForwardingRulesRequest** | **[\*AddPortForwardingRulesRequest](AddPortForwardingRulesRequest.md)** | addPortForwardingRulesRequest | 
+**addPortForwardingRulesRequest** | **[\*AddPortForwardingRulesRequest](AddPortForwardingRulesRequest.md)** | addPortForwardingRulesRequest |
 
 ### Return type
 
@@ -131,7 +131,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**associatePublicIpWithServerInstanceRequest** | **[\*AssociatePublicIpWithServerInstanceRequest](AssociatePublicIpWithServerInstanceRequest.md)** | associatePublicIpWithServerInstanceRequest | 
+**associatePublicIpWithServerInstanceRequest** | **[\*AssociatePublicIpWithServerInstanceRequest](AssociatePublicIpWithServerInstanceRequest.md)** | associatePublicIpWithServerInstanceRequest |
 
 ### Return type
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**attachBlockStorageInstanceRequest** | **[\*AttachBlockStorageInstanceRequest](AttachBlockStorageInstanceRequest.md)** | attachBlockStorageInstanceRequest | 
+**attachBlockStorageInstanceRequest** | **[\*AttachBlockStorageInstanceRequest](AttachBlockStorageInstanceRequest.md)** | attachBlockStorageInstanceRequest |
 
 ### Return type
 
@@ -185,7 +185,7 @@ Network Interface Attach
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**attachNetworkInterfaceRequest** | **[\*AttachNetworkInterfaceRequest](AttachNetworkInterfaceRequest.md)** | attachNetworkInterfaceRequest | 
+**attachNetworkInterfaceRequest** | **[\*AttachNetworkInterfaceRequest](AttachNetworkInterfaceRequest.md)** | attachNetworkInterfaceRequest |
 
 ### Return type
 
@@ -212,7 +212,7 @@ NAS볼륨사이즈변경
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**changeNasVolumeSizeRequest** | **[\*ChangeNasVolumeSizeRequest](ChangeNasVolumeSizeRequest.md)** | changeNasVolumeSizeRequest | 
+**changeNasVolumeSizeRequest** | **[\*ChangeNasVolumeSizeRequest](ChangeNasVolumeSizeRequest.md)** | changeNasVolumeSizeRequest |
 
 ### Return type
 
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**changeServerInstanceSpecRequest** | **[\*ChangeServerInstanceSpecRequest](ChangeServerInstanceSpecRequest.md)** | changeServerInstanceSpecRequest | 
+**changeServerInstanceSpecRequest** | **[\*ChangeServerInstanceSpecRequest](ChangeServerInstanceSpecRequest.md)** | changeServerInstanceSpecRequest |
 
 ### Return type
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createBlockStorageInstanceRequest** | **[\*CreateBlockStorageInstanceRequest](CreateBlockStorageInstanceRequest.md)** | createBlockStorageInstanceRequest | 
+**createBlockStorageInstanceRequest** | **[\*CreateBlockStorageInstanceRequest](CreateBlockStorageInstanceRequest.md)** | createBlockStorageInstanceRequest |
 
 ### Return type
 
@@ -293,7 +293,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createBlockStorageSnapshotInstanceRequest** | **[\*CreateBlockStorageSnapshotInstanceRequest](CreateBlockStorageSnapshotInstanceRequest.md)** | createBlockStorageSnapshotInstanceRequest | 
+**createBlockStorageSnapshotInstanceRequest** | **[\*CreateBlockStorageSnapshotInstanceRequest](CreateBlockStorageSnapshotInstanceRequest.md)** | createBlockStorageSnapshotInstanceRequest |
 
 ### Return type
 
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createInstanceTagsRequest** | **[\*CreateInstanceTagsRequest](CreateInstanceTagsRequest.md)** | createInstanceTagsRequest | 
+**createInstanceTagsRequest** | **[\*CreateInstanceTagsRequest](CreateInstanceTagsRequest.md)** | createInstanceTagsRequest |
 
 ### Return type
 
@@ -347,7 +347,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createLoginKeyRequest** | **[\*CreateLoginKeyRequest](CreateLoginKeyRequest.md)** | createLoginKeyRequest | 
+**createLoginKeyRequest** | **[\*CreateLoginKeyRequest](CreateLoginKeyRequest.md)** | createLoginKeyRequest |
 
 ### Return type
 
@@ -374,7 +374,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createMemberServerImageRequest** | **[\*CreateMemberServerImageRequest](CreateMemberServerImageRequest.md)** | createMemberServerImageRequest | 
+**createMemberServerImageRequest** | **[\*CreateMemberServerImageRequest](CreateMemberServerImageRequest.md)** | createMemberServerImageRequest |
 
 ### Return type
 
@@ -401,7 +401,7 @@ NAS볼륨인스턴스생성
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createNasVolumeInstanceRequest** | **[\*CreateNasVolumeInstanceRequest](CreateNasVolumeInstanceRequest.md)** | createNasVolumeInstanceRequest | 
+**createNasVolumeInstanceRequest** | **[\*CreateNasVolumeInstanceRequest](CreateNasVolumeInstanceRequest.md)** | createNasVolumeInstanceRequest |
 
 ### Return type
 
@@ -428,7 +428,7 @@ Network Interface 생성
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createNetworkInterfaceRequest** | **[\*CreateNetworkInterfaceRequest](CreateNetworkInterfaceRequest.md)** | createNetworkInterfaceRequest | 
+**createNetworkInterfaceRequest** | **[\*CreateNetworkInterfaceRequest](CreateNetworkInterfaceRequest.md)** | createNetworkInterfaceRequest |
 
 ### Return type
 
@@ -455,7 +455,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createPublicIpInstanceRequest** | **[\*CreatePublicIpInstanceRequest](CreatePublicIpInstanceRequest.md)** | createPublicIpInstanceRequest | 
+**createPublicIpInstanceRequest** | **[\*CreatePublicIpInstanceRequest](CreatePublicIpInstanceRequest.md)** | createPublicIpInstanceRequest |
 
 ### Return type
 
@@ -482,7 +482,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**createServerInstancesRequest** | **[\*CreateServerInstancesRequest](CreateServerInstancesRequest.md)** | createServerInstancesRequest | 
+**createServerInstancesRequest** | **[\*CreateServerInstancesRequest](CreateServerInstancesRequest.md)** | createServerInstancesRequest |
 
 ### Return type
 
@@ -509,7 +509,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deleteBlockStorageInstancesRequest** | **[\*DeleteBlockStorageInstancesRequest](DeleteBlockStorageInstancesRequest.md)** | deleteBlockStorageInstancesRequest | 
+**deleteBlockStorageInstancesRequest** | **[\*DeleteBlockStorageInstancesRequest](DeleteBlockStorageInstancesRequest.md)** | deleteBlockStorageInstancesRequest |
 
 ### Return type
 
@@ -536,7 +536,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deleteBlockStorageSnapshotInstancesRequest** | **[\*DeleteBlockStorageSnapshotInstancesRequest](DeleteBlockStorageSnapshotInstancesRequest.md)** | deleteBlockStorageSnapshotInstancesRequest | 
+**deleteBlockStorageSnapshotInstancesRequest** | **[\*DeleteBlockStorageSnapshotInstancesRequest](DeleteBlockStorageSnapshotInstancesRequest.md)** | deleteBlockStorageSnapshotInstancesRequest |
 
 ### Return type
 
@@ -563,7 +563,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deleteInstanceTagsRequest** | **[\*DeleteInstanceTagsRequest](DeleteInstanceTagsRequest.md)** | deleteInstanceTagsRequest | 
+**deleteInstanceTagsRequest** | **[\*DeleteInstanceTagsRequest](DeleteInstanceTagsRequest.md)** | deleteInstanceTagsRequest |
 
 ### Return type
 
@@ -590,7 +590,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deleteLoginKeyRequest** | **[\*DeleteLoginKeyRequest](DeleteLoginKeyRequest.md)** | deleteLoginKeyRequest | 
+**deleteLoginKeyRequest** | **[\*DeleteLoginKeyRequest](DeleteLoginKeyRequest.md)** | deleteLoginKeyRequest |
 
 ### Return type
 
@@ -617,7 +617,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deleteMemberServerImagesRequest** | **[\*DeleteMemberServerImagesRequest](DeleteMemberServerImagesRequest.md)** | deleteMemberServerImagesRequest | 
+**deleteMemberServerImagesRequest** | **[\*DeleteMemberServerImagesRequest](DeleteMemberServerImagesRequest.md)** | deleteMemberServerImagesRequest |
 
 ### Return type
 
@@ -644,7 +644,7 @@ NAS볼륨인스턴스삭제
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deleteNasVolumeInstanceRequest** | **[\*DeleteNasVolumeInstanceRequest](DeleteNasVolumeInstanceRequest.md)** | deleteNasVolumeInstanceRequest | 
+**deleteNasVolumeInstanceRequest** | **[\*DeleteNasVolumeInstanceRequest](DeleteNasVolumeInstanceRequest.md)** | deleteNasVolumeInstanceRequest |
 
 ### Return type
 
@@ -671,7 +671,7 @@ Network Interface 삭제
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deleteNetworkInterfaceRequest** | **[\*DeleteNetworkInterfaceRequest](DeleteNetworkInterfaceRequest.md)** | deleteNetworkInterfaceRequest | 
+**deleteNetworkInterfaceRequest** | **[\*DeleteNetworkInterfaceRequest](DeleteNetworkInterfaceRequest.md)** | deleteNetworkInterfaceRequest |
 
 ### Return type
 
@@ -698,7 +698,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deletePortForwardingRulesRequest** | **[\*DeletePortForwardingRulesRequest](DeletePortForwardingRulesRequest.md)** | deletePortForwardingRulesRequest | 
+**deletePortForwardingRulesRequest** | **[\*DeletePortForwardingRulesRequest](DeletePortForwardingRulesRequest.md)** | deletePortForwardingRulesRequest |
 
 ### Return type
 
@@ -725,7 +725,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**deletePublicIpInstancesRequest** | **[\*DeletePublicIpInstancesRequest](DeletePublicIpInstancesRequest.md)** | deletePublicIpInstancesRequest | 
+**deletePublicIpInstancesRequest** | **[\*DeletePublicIpInstancesRequest](DeletePublicIpInstancesRequest.md)** | deletePublicIpInstancesRequest |
 
 ### Return type
 
@@ -752,7 +752,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**detachBlockStorageInstancesRequest** | **[\*DetachBlockStorageInstancesRequest](DetachBlockStorageInstancesRequest.md)** | detachBlockStorageInstancesRequest | 
+**detachBlockStorageInstancesRequest** | **[\*DetachBlockStorageInstancesRequest](DetachBlockStorageInstancesRequest.md)** | detachBlockStorageInstancesRequest |
 
 ### Return type
 
@@ -779,7 +779,7 @@ Network Interface Detach
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**detachNetworkInterfaceRequest** | **[\*DetachNetworkInterfaceRequest](DetachNetworkInterfaceRequest.md)** | detachNetworkInterfaceRequest | 
+**detachNetworkInterfaceRequest** | **[\*DetachNetworkInterfaceRequest](DetachNetworkInterfaceRequest.md)** | detachNetworkInterfaceRequest |
 
 ### Return type
 
@@ -806,7 +806,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**disassociatePublicIpFromServerInstanceRequest** | **[\*DisassociatePublicIpFromServerInstanceRequest](DisassociatePublicIpFromServerInstanceRequest.md)** | disassociatePublicIpFromServerInstanceRequest | 
+**disassociatePublicIpFromServerInstanceRequest** | **[\*DisassociatePublicIpFromServerInstanceRequest](DisassociatePublicIpFromServerInstanceRequest.md)** | disassociatePublicIpFromServerInstanceRequest |
 
 ### Return type
 
@@ -833,7 +833,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getAccessControlGroupListRequest** | **[\*GetAccessControlGroupListRequest](GetAccessControlGroupListRequest.md)** | getAccessControlGroupListRequest | 
+**getAccessControlGroupListRequest** | **[\*GetAccessControlGroupListRequest](GetAccessControlGroupListRequest.md)** | getAccessControlGroupListRequest |
 
 ### Return type
 
@@ -860,7 +860,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getAccessControlGroupServerInstanceListRequest** | **[\*GetAccessControlGroupServerInstanceListRequest](GetAccessControlGroupServerInstanceListRequest.md)** | getAccessControlGroupServerInstanceListRequest | 
+**getAccessControlGroupServerInstanceListRequest** | **[\*GetAccessControlGroupServerInstanceListRequest](GetAccessControlGroupServerInstanceListRequest.md)** | getAccessControlGroupServerInstanceListRequest |
 
 ### Return type
 
@@ -887,7 +887,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getAccessControlRuleListRequest** | **[\*GetAccessControlRuleListRequest](GetAccessControlRuleListRequest.md)** | getAccessControlRuleListRequest | 
+**getAccessControlRuleListRequest** | **[\*GetAccessControlRuleListRequest](GetAccessControlRuleListRequest.md)** | getAccessControlRuleListRequest |
 
 ### Return type
 
@@ -914,7 +914,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getBlockStorageInstanceListRequest** | **[\*GetBlockStorageInstanceListRequest](GetBlockStorageInstanceListRequest.md)** | getBlockStorageInstanceListRequest | 
+**getBlockStorageInstanceListRequest** | **[\*GetBlockStorageInstanceListRequest](GetBlockStorageInstanceListRequest.md)** | getBlockStorageInstanceListRequest |
 
 ### Return type
 
@@ -941,7 +941,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getBlockStorageSnapshotInstanceListRequest** | **[\*GetBlockStorageSnapshotInstanceListRequest](GetBlockStorageSnapshotInstanceListRequest.md)** | getBlockStorageSnapshotInstanceListRequest | 
+**getBlockStorageSnapshotInstanceListRequest** | **[\*GetBlockStorageSnapshotInstanceListRequest](GetBlockStorageSnapshotInstanceListRequest.md)** | getBlockStorageSnapshotInstanceListRequest |
 
 ### Return type
 
@@ -968,7 +968,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getInitScriptListRqeust** | **[\*GetInitScriptListRequest](GetInitScriptListRequest.md)** | getInitScriptListRqeust | 
+**getInitScriptListRqeust** | **[\*GetInitScriptListRequest](GetInitScriptListRequest.md)** | getInitScriptListRqeust |
 
 ### Return type
 
@@ -995,7 +995,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getInstanceTagListRequest** | **[\*GetInstanceTagListRequest](GetInstanceTagListRequest.md)** | getInstanceTagListRequest | 
+**getInstanceTagListRequest** | **[\*GetInstanceTagListRequest](GetInstanceTagListRequest.md)** | getInstanceTagListRequest |
 
 ### Return type
 
@@ -1022,7 +1022,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getLoginKeyListRequest** | **[\*GetLoginKeyListRequest](GetLoginKeyListRequest.md)** | getLoginKeyListRequest | 
+**getLoginKeyListRequest** | **[\*GetLoginKeyListRequest](GetLoginKeyListRequest.md)** | getLoginKeyListRequest |
 
 ### Return type
 
@@ -1049,7 +1049,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getMemberServerImageListRequest** | **[\*GetMemberServerImageListRequest](GetMemberServerImageListRequest.md)** | getMemberServerImageListRequest | 
+**getMemberServerImageListRequest** | **[\*GetMemberServerImageListRequest](GetMemberServerImageListRequest.md)** | getMemberServerImageListRequest |
 
 ### Return type
 
@@ -1076,7 +1076,7 @@ NAS볼륨인스턴스리스트조회
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getNasVolumeInstanceListRequest** | **[\*GetNasVolumeInstanceListRequest](GetNasVolumeInstanceListRequest.md)** | getNasVolumeInstanceListRequest | 
+**getNasVolumeInstanceListRequest** | **[\*GetNasVolumeInstanceListRequest](GetNasVolumeInstanceListRequest.md)** | getNasVolumeInstanceListRequest |
 
 ### Return type
 
@@ -1103,7 +1103,7 @@ NAS볼륨인스턴스측정리스트조회
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getNasVolumeInstanceRatingListRequest** | **[\*GetNasVolumeInstanceRatingListRequest](GetNasVolumeInstanceRatingListRequest.md)** | getNasVolumeInstanceRatingListRequest | 
+**getNasVolumeInstanceRatingListRequest** | **[\*GetNasVolumeInstanceRatingListRequest](GetNasVolumeInstanceRatingListRequest.md)** | getNasVolumeInstanceRatingListRequest |
 
 ### Return type
 
@@ -1130,7 +1130,7 @@ Network Interface 리스트조회
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getNetworkInterfaceListRequest** | **[\*GetNetworkInterfaceListRequest](GetNetworkInterfaceListRequest.md)** | getNetworkInterfaceListRequest | 
+**getNetworkInterfaceListRequest** | **[\*GetNetworkInterfaceListRequest](GetNetworkInterfaceListRequest.md)** | getNetworkInterfaceListRequest |
 
 ### Return type
 
@@ -1157,7 +1157,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getPortForwardingRuleListRequest** | **[\*GetPortForwardingRuleListRequest](GetPortForwardingRuleListRequest.md)** | getPortForwardingRuleListRequest | 
+**getPortForwardingRuleListRequest** | **[\*GetPortForwardingRuleListRequest](GetPortForwardingRuleListRequest.md)** | getPortForwardingRuleListRequest |
 
 ### Return type
 
@@ -1184,7 +1184,7 @@ Private Subnet 인스턴스리스트조회
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getPrivateSubnetInstanceListRequest** | **[\*GetPrivateSubnetInstanceListRequest](GetPrivateSubnetInstanceListRequest.md)** | getPrivateSubnetInstanceListRequest | 
+**getPrivateSubnetInstanceListRequest** | **[\*GetPrivateSubnetInstanceListRequest](GetPrivateSubnetInstanceListRequest.md)** | getPrivateSubnetInstanceListRequest |
 
 ### Return type
 
@@ -1211,7 +1211,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getPublicIpInstanceListRequest** | **[\*GetPublicIpInstanceListRequest](GetPublicIpInstanceListRequest.md)** | getPublicIpInstanceListRequest | 
+**getPublicIpInstanceListRequest** | **[\*GetPublicIpInstanceListRequest](GetPublicIpInstanceListRequest.md)** | getPublicIpInstanceListRequest |
 
 ### Return type
 
@@ -1238,7 +1238,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getPublicIpTargetServerInstanceListRequest** | **[\*GetPublicIpTargetServerInstanceListRequest](GetPublicIpTargetServerInstanceListRequest.md)** | getPublicIpTargetServerInstanceListRequest | 
+**getPublicIpTargetServerInstanceListRequest** | **[\*GetPublicIpTargetServerInstanceListRequest](GetPublicIpTargetServerInstanceListRequest.md)** | getPublicIpTargetServerInstanceListRequest |
 
 ### Return type
 
@@ -1265,7 +1265,7 @@ RAID리스트조회
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getRaidListRequest** | **[\*GetRaidListRequest](GetRaidListRequest.md)** | getRaidListRequest | 
+**getRaidListRequest** | **[\*GetRaidListRequest](GetRaidListRequest.md)** | getRaidListRequest |
 
 ### Return type
 
@@ -1292,7 +1292,7 @@ REGION리스트조회
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getRegionListRequest** | **[\*GetRegionListRequest](GetRegionListRequest.md)** | getRegionListRequest | 
+**getRegionListRequest** | **[\*GetRegionListRequest](GetRegionListRequest.md)** | getRegionListRequest |
 
 ### Return type
 
@@ -1319,7 +1319,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getRootPasswordRequest** | **[\*GetRootPasswordRequest](GetRootPasswordRequest.md)** | getRootPasswordRequest | 
+**getRootPasswordRequest** | **[\*GetRootPasswordRequest](GetRootPasswordRequest.md)** | getRootPasswordRequest |
 
 ### Return type
 
@@ -1346,7 +1346,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getRootPasswordServerInstanceListRequest** | **[\*GetRootPasswordServerInstanceListRequest](GetRootPasswordServerInstanceListRequest.md)** | getRootPasswordServerInstanceListRequest | 
+**getRootPasswordServerInstanceListRequest** | **[\*GetRootPasswordServerInstanceListRequest](GetRootPasswordServerInstanceListRequest.md)** | getRootPasswordServerInstanceListRequest |
 
 ### Return type
 
@@ -1373,7 +1373,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getServerImageProductListRequest** | **[\*GetServerImageProductListRequest](GetServerImageProductListRequest.md)** | getServerImageProductListRequest | 
+**getServerImageProductListRequest** | **[\*GetServerImageProductListRequest](GetServerImageProductListRequest.md)** | getServerImageProductListRequest |
 
 ### Return type
 
@@ -1400,7 +1400,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getServerInstanceListRequest** | **[\*GetServerInstanceListRequest](GetServerInstanceListRequest.md)** | getServerInstanceListRequest | 
+**getServerInstanceListRequest** | **[\*GetServerInstanceListRequest](GetServerInstanceListRequest.md)** | getServerInstanceListRequest |
 
 ### Return type
 
@@ -1427,7 +1427,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getServerProductListRequest** | **[\*GetServerProductListRequest](GetServerProductListRequest.md)** | getServerProductListRequest | 
+**getServerProductListRequest** | **[\*GetServerProductListRequest](GetServerProductListRequest.md)** | getServerProductListRequest |
 
 ### Return type
 
@@ -1454,7 +1454,7 @@ ZONE리스트조회
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**getZoneListRequest** | **[\*GetZoneListRequest](GetZoneListRequest.md)** | getZoneListRequest | 
+**getZoneListRequest** | **[\*GetZoneListRequest](GetZoneListRequest.md)** | getZoneListRequest |
 
 ### Return type
 
@@ -1481,7 +1481,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**importLoginKeyRequest** | **[\*ImportLoginKeyRequest](ImportLoginKeyRequest.md)** | importLoginKeyRequest | 
+**importLoginKeyRequest** | **[\*ImportLoginKeyRequest](ImportLoginKeyRequest.md)** | importLoginKeyRequest |
 
 ### Return type
 
@@ -1508,7 +1508,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**rebootServerInstancesRequest** | **[\*RebootServerInstancesRequest](RebootServerInstancesRequest.md)** | rebootServerInstancesRequest | 
+**rebootServerInstancesRequest** | **[\*RebootServerInstancesRequest](RebootServerInstancesRequest.md)** | rebootServerInstancesRequest |
 
 ### Return type
 
@@ -1535,7 +1535,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**recreateServerInstanceRequest** | **[\*RecreateServerInstanceRequest](RecreateServerInstanceRequest.md)** | recreateServerInstanceRequest | 
+**recreateServerInstanceRequest** | **[\*RecreateServerInstanceRequest](RecreateServerInstanceRequest.md)** | recreateServerInstanceRequest |
 
 ### Return type
 
@@ -1562,7 +1562,7 @@ NAS볼륨인스턴스접근제어제거
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**removeNasVolumeAccessControlRequest** | **[\*RemoveNasVolumeAccessControlRequest](RemoveNasVolumeAccessControlRequest.md)** | removeNasVolumeAccessControlRequest | 
+**removeNasVolumeAccessControlRequest** | **[\*RemoveNasVolumeAccessControlRequest](RemoveNasVolumeAccessControlRequest.md)** | removeNasVolumeAccessControlRequest |
 
 ### Return type
 
@@ -1589,7 +1589,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**replaceServerInstanceAssociatedWithPublicIpRequest** | **[\*ReplaceServerInstanceAssociatedWithPublicIpRequest](ReplaceServerInstanceAssociatedWithPublicIpRequest.md)** | replaceServerInstanceAssociatedWithPublicIpRequest | 
+**replaceServerInstanceAssociatedWithPublicIpRequest** | **[\*ReplaceServerInstanceAssociatedWithPublicIpRequest](ReplaceServerInstanceAssociatedWithPublicIpRequest.md)** | replaceServerInstanceAssociatedWithPublicIpRequest |
 
 ### Return type
 
@@ -1616,7 +1616,7 @@ NAS볼륨인스턴스접근제어설정
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**setNasVolumeAccessControlRequest** | **[\*SetNasVolumeAccessControlRequest](SetNasVolumeAccessControlRequest.md)** | setNasVolumeAccessControlRequest | 
+**setNasVolumeAccessControlRequest** | **[\*SetNasVolumeAccessControlRequest](SetNasVolumeAccessControlRequest.md)** | setNasVolumeAccessControlRequest |
 
 ### Return type
 
@@ -1643,7 +1643,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**startServerInstancesRequest** | **[\*StartServerInstancesRequest](StartServerInstancesRequest.md)** | startServerInstancesRequest | 
+**startServerInstancesRequest** | **[\*StartServerInstancesRequest](StartServerInstancesRequest.md)** | startServerInstancesRequest |
 
 ### Return type
 
@@ -1670,7 +1670,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**stopServerInstancesRequest** | **[\*StopServerInstancesRequest](StopServerInstancesRequest.md)** | stopServerInstancesRequest | 
+**stopServerInstancesRequest** | **[\*StopServerInstancesRequest](StopServerInstancesRequest.md)** | stopServerInstancesRequest |
 
 ### Return type
 
@@ -1697,7 +1697,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**terminateServerInstancesRequest** | **[\*TerminateServerInstancesRequest](TerminateServerInstancesRequest.md)** | terminateServerInstancesRequest | 
+**terminateServerInstancesRequest** | **[\*TerminateServerInstancesRequest](TerminateServerInstancesRequest.md)** | terminateServerInstancesRequest |
 
 ### Return type
 
