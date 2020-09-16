@@ -83,7 +83,7 @@ ZoneCode *string `json:"zoneCode,omitempty"`
 InitScriptNo *string `json:"initScriptNo,omitempty"`
 
 	// NAS볼륨서버인스턴스번호리스트
-NasVolumeServerInstanceNoList []*ServerInstanceNo `json:"nasVolumeServerInstanceNoList,omitempty"`
+NasVolumeServerInstanceNoList []*string `json:"nasVolumeServerInstanceNoList,omitempty"`
 
 	// 볼륨암호화여부
 IsEncryptedVolume *bool `json:"isEncryptedVolume,omitempty"`

@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 **RegionCode** | ***string** | REGION코드 | [optional] [default to null]
 **ZoneCode** | ***string** | ZONE코드 | [optional] [default to null]
 **InitScriptNo** | ***string** | 초기화스크립트번호 | [optional] [default to null]
-**NasVolumeServerInstanceNoList** | **[[]\*ServerInstanceNo](ServerInstanceNo.md)** | NAS볼륨서버인스턴스번호리스트 | [optional] [default to null]
+**NasVolumeServerInstanceNoList** | **[]\*string** | NAS볼륨서버인스턴스번호리스트 | [optional] [default to null]
 **IsEncryptedVolume** | ***bool** | 볼륨암호화여부 | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
