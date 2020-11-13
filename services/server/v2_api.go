@@ -28,7 +28,7 @@ var (
 type V2ApiService service
 
 
-/* V2ApiService 
+/* V2ApiService
  NAS볼륨인스턴스접근제어추가
  @param addNasVolumeAccessControlRequest addNasVolumeAccessControlRequest
  @return *AddNasVolumeAccessControlResponse*/
@@ -102,7 +102,7 @@ func (a *V2ApiService) AddNasVolumeAccessControl(addNasVolumeAccessControlReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  포트포워딩Rule추가
  @param addPortForwardingRulesRequest addPortForwardingRulesRequest
  @return *AddPortForwardingRulesResponse*/
@@ -176,7 +176,7 @@ func (a *V2ApiService) AddPortForwardingRules(addPortForwardingRulesRequest *Add
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  공인IP를서버인스턴스에할당
  @param associatePublicIpWithServerInstanceRequest associatePublicIpWithServerInstanceRequest
  @return *AssociatePublicIpWithServerInstanceResponse*/
@@ -250,7 +250,7 @@ func (a *V2ApiService) AssociatePublicIpWithServerInstance(associatePublicIpWith
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  블록스토리지인스턴스할당
  @param attachBlockStorageInstanceRequest attachBlockStorageInstanceRequest
  @return *AttachBlockStorageInstanceResponse*/
@@ -324,7 +324,7 @@ func (a *V2ApiService) AttachBlockStorageInstance(attachBlockStorageInstanceRequ
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  Network Interface Attach
  @param attachNetworkInterfaceRequest attachNetworkInterfaceRequest
  @return *AttachNetworkInterfaceResponse*/
@@ -398,7 +398,81 @@ func (a *V2ApiService) AttachNetworkInterface(attachNetworkInterfaceRequest *Att
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
+ 블록스토리지볼륨사이즈변경
+ @param changeBlockStorageVolumeSizeRequest changeBlockStorageVolumeSizeRequest
+ @return *ChangeBlockStorageVolumeSizeResponse*/
+func (a *V2ApiService) ChangeBlockStorageVolumeSize(changeBlockStorageVolumeSizeRequest *ChangeBlockStorageVolumeSizeRequest) (*ChangeBlockStorageVolumeSizeResponse, error) {
+	var (
+		localVarHttpMethod = strings.ToUpper("Post")
+		localVarPostBody interface{}
+		localVarFileName string
+		localVarFileBytes []byte
+	 	successPayload  ChangeBlockStorageVolumeSizeResponse
+	)
+
+	// create path and map variables
+	localVarPath := a.client.cfg.BasePath + "/changeBlockStorageVolumeSize"
+
+	localVarHeaderParams := make(map[string]string)
+	localVarQueryParams := url.Values{}
+	localVarFormParams := url.Values{}
+
+
+	// to determine the Content-Type header
+	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+
+	// set Content-Type header
+	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
+	if localVarHttpContentType != "" {
+		localVarHeaderParams["Content-Type"] = localVarHttpContentType
+	}
+
+	// to determine the Accept header
+	localVarHttpHeaderAccepts := []string{
+		}
+
+	// set Accept header
+	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
+	if localVarHttpHeaderAccept != "" {
+		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
+	}
+	// body params
+	localVarPostBody = changeBlockStorageVolumeSizeRequest
+	v := reflect.ValueOf(localVarPostBody).Elem().FieldByName("UserData")
+	if v.IsValid() && v.CanAddr() {
+		ptr := v.Addr().Interface().(**string)
+		if *ptr != nil {
+			**ptr = base64.StdEncoding.EncodeToString([]byte(**ptr))
+		}
+	}
+	r, err := a.client.prepareRequest(localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	if err != nil {
+		return &successPayload, err
+	}
+
+	localVarHttpResponse, err := a.client.callAPI(r)
+	if err != nil || localVarHttpResponse == nil {
+		return &successPayload, err
+	}
+	defer localVarHttpResponse.Body.Close()
+	bodyBytes, _ := ioutil.ReadAll(localVarHttpResponse.Body)
+
+	if localVarHttpResponse.StatusCode >= 300 || (localVarHttpResponse.StatusCode < 300 && !strings.HasPrefix(string(bodyBytes), `{`)) {
+		return &successPayload, reportError("Status: %v, Body: %s", localVarHttpResponse.Status, bodyBytes)
+	}
+
+	if !strings.Contains(string(bodyBytes), `{"error"`) && strings.HasPrefix(string(bodyBytes), `{`) {
+		if err = json.Unmarshal(bodyBytes[bytes.IndexAny(bytes.Trim(bodyBytes, "{"), "{"):len(bodyBytes)-1], &successPayload); err != nil {
+			return &successPayload, err
+		}
+	}
+
+
+	return &successPayload, err
+}
+
+/* V2ApiService
  NAS볼륨사이즈변경
  @param changeNasVolumeSizeRequest changeNasVolumeSizeRequest
  @return *ChangeNasVolumeSizeResponse*/
@@ -472,7 +546,7 @@ func (a *V2ApiService) ChangeNasVolumeSize(changeNasVolumeSizeRequest *ChangeNas
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버인스턴스스팩변경
  @param changeServerInstanceSpecRequest changeServerInstanceSpecRequest
  @return *ChangeServerInstanceSpecResponse*/
@@ -546,7 +620,7 @@ func (a *V2ApiService) ChangeServerInstanceSpec(changeServerInstanceSpecRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  블록스토리지인스턴스생성
  @param createBlockStorageInstanceRequest createBlockStorageInstanceRequest
  @return *CreateBlockStorageInstanceResponse*/
@@ -620,7 +694,7 @@ func (a *V2ApiService) CreateBlockStorageInstance(createBlockStorageInstanceRequ
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  블록스토리지스냅샷인스턴스생성
  @param createBlockStorageSnapshotInstanceRequest createBlockStorageSnapshotInstanceRequest
  @return *CreateBlockStorageSnapshotInstanceResponse*/
@@ -694,7 +768,7 @@ func (a *V2ApiService) CreateBlockStorageSnapshotInstance(createBlockStorageSnap
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  인스턴스태그생성
  @param createInstanceTagsRequest createInstanceTagsRequest
  @return *CreateInstanceTagsResponse*/
@@ -768,7 +842,7 @@ func (a *V2ApiService) CreateInstanceTags(createInstanceTagsRequest *CreateInsta
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  로그인키생성
  @param createLoginKeyRequest createLoginKeyRequest
  @return *CreateLoginKeyResponse*/
@@ -842,7 +916,7 @@ func (a *V2ApiService) CreateLoginKey(createLoginKeyRequest *CreateLoginKeyReque
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  회원서버이미지생성
  @param createMemberServerImageRequest createMemberServerImageRequest
  @return *CreateMemberServerImageResponse*/
@@ -916,7 +990,7 @@ func (a *V2ApiService) CreateMemberServerImage(createMemberServerImageRequest *C
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NAS볼륨인스턴스생성
  @param createNasVolumeInstanceRequest createNasVolumeInstanceRequest
  @return *CreateNasVolumeInstanceResponse*/
@@ -990,7 +1064,7 @@ func (a *V2ApiService) CreateNasVolumeInstance(createNasVolumeInstanceRequest *C
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  Network Interface 생성
  @param createNetworkInterfaceRequest createNetworkInterfaceRequest
  @return *CreateNetworkInterfaceResponse*/
@@ -1064,7 +1138,7 @@ func (a *V2ApiService) CreateNetworkInterface(createNetworkInterfaceRequest *Cre
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  공인IP인스턴스생성
  @param createPublicIpInstanceRequest createPublicIpInstanceRequest
  @return *CreatePublicIpInstanceResponse*/
@@ -1138,7 +1212,7 @@ func (a *V2ApiService) CreatePublicIpInstance(createPublicIpInstanceRequest *Cre
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버인스턴스생성
  @param createServerInstancesRequest createServerInstancesRequest
  @return *CreateServerInstancesResponse*/
@@ -1212,7 +1286,7 @@ func (a *V2ApiService) CreateServerInstances(createServerInstancesRequest *Creat
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  블록스토리지인스턴스삭제
  @param deleteBlockStorageInstancesRequest deleteBlockStorageInstancesRequest
  @return *DeleteBlockStorageInstancesResponse*/
@@ -1286,7 +1360,7 @@ func (a *V2ApiService) DeleteBlockStorageInstances(deleteBlockStorageInstancesRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  블록스토리지스냅샷인스턴스삭제
  @param deleteBlockStorageSnapshotInstancesRequest deleteBlockStorageSnapshotInstancesRequest
  @return *DeleteBlockStorageSnapshotInstancesResponse*/
@@ -1360,7 +1434,7 @@ func (a *V2ApiService) DeleteBlockStorageSnapshotInstances(deleteBlockStorageSna
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  인스턴스태그삭제
  @param deleteInstanceTagsRequest deleteInstanceTagsRequest
  @return *DeleteInstanceTagsResponse*/
@@ -1434,7 +1508,7 @@ func (a *V2ApiService) DeleteInstanceTags(deleteInstanceTagsRequest *DeleteInsta
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  로그인키삭제
  @param deleteLoginKeyRequest deleteLoginKeyRequest
  @return *DeleteLoginKeyResponse*/
@@ -1508,7 +1582,7 @@ func (a *V2ApiService) DeleteLoginKey(deleteLoginKeyRequest *DeleteLoginKeyReque
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  회원서버이미지삭제
  @param deleteMemberServerImagesRequest deleteMemberServerImagesRequest
  @return *DeleteMemberServerImagesResponse*/
@@ -1582,7 +1656,7 @@ func (a *V2ApiService) DeleteMemberServerImages(deleteMemberServerImagesRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NAS볼륨인스턴스삭제
  @param deleteNasVolumeInstanceRequest deleteNasVolumeInstanceRequest
  @return *DeleteNasVolumeInstanceResponse*/
@@ -1656,7 +1730,7 @@ func (a *V2ApiService) DeleteNasVolumeInstance(deleteNasVolumeInstanceRequest *D
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  Network Interface 삭제
  @param deleteNetworkInterfaceRequest deleteNetworkInterfaceRequest
  @return *DeleteNetworkInterfaceResponse*/
@@ -1730,7 +1804,7 @@ func (a *V2ApiService) DeleteNetworkInterface(deleteNetworkInterfaceRequest *Del
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  포트포워딩Rule삭제
  @param deletePortForwardingRulesRequest deletePortForwardingRulesRequest
  @return *DeletePortForwardingRulesResponse*/
@@ -1804,7 +1878,7 @@ func (a *V2ApiService) DeletePortForwardingRules(deletePortForwardingRulesReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  공인IP인스턴스삭제
  @param deletePublicIpInstancesRequest deletePublicIpInstancesRequest
  @return *DeletePublicIpInstancesResponse*/
@@ -1878,7 +1952,7 @@ func (a *V2ApiService) DeletePublicIpInstances(deletePublicIpInstancesRequest *D
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  블록스토리지인스턴스할당해제
  @param detachBlockStorageInstancesRequest detachBlockStorageInstancesRequest
  @return *DetachBlockStorageInstancesResponse*/
@@ -1952,7 +2026,7 @@ func (a *V2ApiService) DetachBlockStorageInstances(detachBlockStorageInstancesRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  Network Interface Detach
  @param detachNetworkInterfaceRequest detachNetworkInterfaceRequest
  @return *DetachNetworkInterfaceResponse*/
@@ -2026,7 +2100,7 @@ func (a *V2ApiService) DetachNetworkInterface(detachNetworkInterfaceRequest *Det
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  공인IP를서버인스턴스에할당해제
  @param disassociatePublicIpFromServerInstanceRequest disassociatePublicIpFromServerInstanceRequest
  @return *DisassociatePublicIpFromServerInstanceResponse*/
@@ -2100,7 +2174,7 @@ func (a *V2ApiService) DisassociatePublicIpFromServerInstance(disassociatePublic
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  접근제어그룹리스트조회
  @param getAccessControlGroupListRequest getAccessControlGroupListRequest
  @return *GetAccessControlGroupListResponse*/
@@ -2174,7 +2248,7 @@ func (a *V2ApiService) GetAccessControlGroupList(getAccessControlGroupListReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  접근제어그룹적용된서버인스턴스리스트조회
  @param getAccessControlGroupServerInstanceListRequest getAccessControlGroupServerInstanceListRequest
  @return *GetAccessControlGroupServerInstanceListResponse*/
@@ -2248,7 +2322,7 @@ func (a *V2ApiService) GetAccessControlGroupServerInstanceList(getAccessControlG
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  접근제어규칙리스트조회
  @param getAccessControlRuleListRequest getAccessControlRuleListRequest
  @return *GetAccessControlRuleListResponse*/
@@ -2322,7 +2396,7 @@ func (a *V2ApiService) GetAccessControlRuleList(getAccessControlRuleListRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  블록스토리지인스턴스리스트조회
  @param getBlockStorageInstanceListRequest getBlockStorageInstanceListRequest
  @return *GetBlockStorageInstanceListResponse*/
@@ -2396,7 +2470,7 @@ func (a *V2ApiService) GetBlockStorageInstanceList(getBlockStorageInstanceListRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  블록스토리지스냅샷인스턴스리스트조회
  @param getBlockStorageSnapshotInstanceListRequest getBlockStorageSnapshotInstanceListRequest
  @return *GetBlockStorageSnapshotInstanceListResponse*/
@@ -2470,7 +2544,7 @@ func (a *V2ApiService) GetBlockStorageSnapshotInstanceList(getBlockStorageSnapsh
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  초기화스크립트리스트조회
  @param getInitScriptListRqeust getInitScriptListRqeust
  @return *GetInitScriptListResponse*/
@@ -2544,7 +2618,7 @@ func (a *V2ApiService) GetInitScriptList(getInitScriptListRqeust *GetInitScriptL
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  인스턴스태그리스트조회
  @param getInstanceTagListRequest getInstanceTagListRequest
  @return *GetInstanceTagListResponse*/
@@ -2618,7 +2692,7 @@ func (a *V2ApiService) GetInstanceTagList(getInstanceTagListRequest *GetInstance
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  로그인키리스트조회
  @param getLoginKeyListRequest getLoginKeyListRequest
  @return *GetLoginKeyListResponse*/
@@ -2692,7 +2766,7 @@ func (a *V2ApiService) GetLoginKeyList(getLoginKeyListRequest *GetLoginKeyListRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  회원서버이미지리스트조회
  @param getMemberServerImageListRequest getMemberServerImageListRequest
  @return *GetMemberServerImageListResponse*/
@@ -2766,7 +2840,7 @@ func (a *V2ApiService) GetMemberServerImageList(getMemberServerImageListRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NAS볼륨인스턴스리스트조회
  @param getNasVolumeInstanceListRequest getNasVolumeInstanceListRequest
  @return *GetNasVolumeInstanceListResponse*/
@@ -2840,7 +2914,7 @@ func (a *V2ApiService) GetNasVolumeInstanceList(getNasVolumeInstanceListRequest 
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NAS볼륨인스턴스측정리스트조회
  @param getNasVolumeInstanceRatingListRequest getNasVolumeInstanceRatingListRequest
  @return *GetNasVolumeInstanceRatingListResponse*/
@@ -2914,7 +2988,7 @@ func (a *V2ApiService) GetNasVolumeInstanceRatingList(getNasVolumeInstanceRating
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  Network Interface 리스트조회
  @param getNetworkInterfaceListRequest getNetworkInterfaceListRequest
  @return *GetNetworkInterfaceListResponse*/
@@ -2988,7 +3062,7 @@ func (a *V2ApiService) GetNetworkInterfaceList(getNetworkInterfaceListRequest *G
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  포트포워딩Rule리스트조회
  @param getPortForwardingRuleListRequest getPortForwardingRuleListRequest
  @return *GetPortForwardingRuleListResponse*/
@@ -3062,7 +3136,7 @@ func (a *V2ApiService) GetPortForwardingRuleList(getPortForwardingRuleListReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  Private Subnet 인스턴스리스트조회
  @param getPrivateSubnetInstanceListRequest getPrivateSubnetInstanceListRequest
  @return *GetPrivateSubnetInstanceListResponse*/
@@ -3136,7 +3210,7 @@ func (a *V2ApiService) GetPrivateSubnetInstanceList(getPrivateSubnetInstanceList
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  공인IP인스턴스리스트조회
  @param getPublicIpInstanceListRequest getPublicIpInstanceListRequest
  @return *GetPublicIpInstanceListResponse*/
@@ -3210,7 +3284,7 @@ func (a *V2ApiService) GetPublicIpInstanceList(getPublicIpInstanceListRequest *G
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  공인IP할당(가능)서버인스턴스리스트조회
  @param getPublicIpTargetServerInstanceListRequest getPublicIpTargetServerInstanceListRequest
  @return *GetPublicIpTargetServerInstanceListResponse*/
@@ -3284,7 +3358,7 @@ func (a *V2ApiService) GetPublicIpTargetServerInstanceList(getPublicIpTargetServ
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  RAID리스트조회
  @param getRaidListRequest getRaidListRequest
  @return *GetRaidListResponse*/
@@ -3358,7 +3432,7 @@ func (a *V2ApiService) GetRaidList(getRaidListRequest *GetRaidListRequest) (*Get
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  REGION리스트조회
  @param getRegionListRequest getRegionListRequest
  @return *GetRegionListResponse*/
@@ -3432,7 +3506,7 @@ func (a *V2ApiService) GetRegionList(getRegionListRequest *GetRegionListRequest)
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  루트패스워드조회
  @param getRootPasswordRequest getRootPasswordRequest
  @return *GetRootPasswordResponse*/
@@ -3506,7 +3580,7 @@ func (a *V2ApiService) GetRootPassword(getRootPasswordRequest *GetRootPasswordRe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  루트패스워드서버인스턴스리스트조회
  @param getRootPasswordServerInstanceListRequest getRootPasswordServerInstanceListRequest
  @return *GetRootPasswordServerInstanceListResponse*/
@@ -3580,7 +3654,7 @@ func (a *V2ApiService) GetRootPasswordServerInstanceList(getRootPasswordServerIn
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버이미지상품리스트조회
  @param getServerImageProductListRequest getServerImageProductListRequest
  @return *GetServerImageProductListResponse*/
@@ -3654,7 +3728,7 @@ func (a *V2ApiService) GetServerImageProductList(getServerImageProductListReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버인스턴스리스트조회
  @param getServerInstanceListRequest getServerInstanceListRequest
  @return *GetServerInstanceListResponse*/
@@ -3728,7 +3802,7 @@ func (a *V2ApiService) GetServerInstanceList(getServerInstanceListRequest *GetSe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버상품리스트조회
  @param getServerProductListRequest getServerProductListRequest
  @return *GetServerProductListResponse*/
@@ -3802,7 +3876,7 @@ func (a *V2ApiService) GetServerProductList(getServerProductListRequest *GetServ
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  ZONE리스트조회
  @param getZoneListRequest getZoneListRequest
  @return *GetZoneListResponse*/
@@ -3876,7 +3950,7 @@ func (a *V2ApiService) GetZoneList(getZoneListRequest *GetZoneListRequest) (*Get
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  로그인키IMPORT
  @param importLoginKeyRequest importLoginKeyRequest
  @return *ImportLoginKeyResponse*/
@@ -3950,7 +4024,7 @@ func (a *V2ApiService) ImportLoginKey(importLoginKeyRequest *ImportLoginKeyReque
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버인스턴스재시작
  @param rebootServerInstancesRequest rebootServerInstancesRequest
  @return *RebootServerInstancesResponse*/
@@ -4024,7 +4098,7 @@ func (a *V2ApiService) RebootServerInstances(rebootServerInstancesRequest *Reboo
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버인스턴스재생성
  @param recreateServerInstanceRequest recreateServerInstanceRequest
  @return *RecreateServerInstanceResponse*/
@@ -4098,7 +4172,7 @@ func (a *V2ApiService) RecreateServerInstance(recreateServerInstanceRequest *Rec
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NAS볼륨인스턴스접근제어제거
  @param removeNasVolumeAccessControlRequest removeNasVolumeAccessControlRequest
  @return *RemoveNasVolumeAccessControlResponse*/
@@ -4172,7 +4246,7 @@ func (a *V2ApiService) RemoveNasVolumeAccessControl(removeNasVolumeAccessControl
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  공인IP서버인스턴스교체
  @param replaceServerInstanceAssociatedWithPublicIpRequest replaceServerInstanceAssociatedWithPublicIpRequest
  @return *ReplaceServerInstanceAssociatedWithPublicIpResponse*/
@@ -4246,7 +4320,7 @@ func (a *V2ApiService) ReplaceServerInstanceAssociatedWithPublicIp(replaceServer
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  NAS볼륨인스턴스접근제어설정
  @param setNasVolumeAccessControlRequest setNasVolumeAccessControlRequest
  @return *SetNasVolumeAccessControlResponse*/
@@ -4320,7 +4394,7 @@ func (a *V2ApiService) SetNasVolumeAccessControl(setNasVolumeAccessControlReques
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버인스턴스시작
  @param startServerInstancesRequest startServerInstancesRequest
  @return *StartServerInstancesResponse*/
@@ -4394,7 +4468,7 @@ func (a *V2ApiService) StartServerInstances(startServerInstancesRequest *StartSe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버인스턴스종료
  @param stopServerInstancesRequest stopServerInstancesRequest
  @return *StopServerInstancesResponse*/
@@ -4468,7 +4542,7 @@ func (a *V2ApiService) StopServerInstances(stopServerInstancesRequest *StopServe
 	return &successPayload, err
 }
 
-/* V2ApiService 
+/* V2ApiService
  서버인스턴스반납
  @param terminateServerInstancesRequest terminateServerInstancesRequest
  @return *TerminateServerInstancesResponse*/
